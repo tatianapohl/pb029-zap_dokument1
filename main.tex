@@ -1,14 +1,143 @@
-\documentclass{article}
-\usepackage{graphicx} % Required for inserting images
+% a mashup of hipstercv / timelinecv and awesome-cv.
+% https://www.latextemplates.com/template/awesome-resume-cv
 
-\title{pb029-zap_dokument1}
-\author{xpohlod }
+\documentclass[rose]{pastelcv}
+% available options are: turquoise, red, lighthipsterblue, rose, blue, pastelgreen,
+% grey, allblack
+\usepackage[utf8x]{inputenc}
+
+\usepackage[familydefault,light]{Chivo} %% Option 'familydefault' only if the base font of the document is to be sans serif
+\usepackage[default]{raleway}
+\usepackage[T1]{fontenc}
+
+
+\getpagesetup
+
+%------------------------------------------------------------------
+\title{Životopis}
+\author{Tatiana Pohlodová}
 \date{November 2023}
 
 \begin{document}
 
-\maketitle
+\thispagestyle{empty}
+%-------------------------------------------------------------
 
-\section{Introduction}
+\begin{center}
 
+\headername{Tatiana}{Pohlodová}
+
+\jobdescription{programátorka}
+
+\adressline{Botanická 554/68A, 602 00 Brno}
+ 
+\getgreyishblackfont
+
+{
+    \small 
+    \headersymbols{%
+        \faMapMarker/Brno, 
+        \faPhone/999000999, 
+        \faAt/xpohlod@fi.muni.cz\protect%
+    }
+}
+
+\end{center}
+
+\vspace{0.5cm}
+
+%------------------------------------------------
+
+\setupparacol
+\begin{paracol}{2}
+
+\fancysection{cvcolour}{Pra}{covné skúsenosti}
+\begin{tabular}{r| p{\onethirdwidth}}
+    \cvevent{2023 -}{Informačný systém Masarykovej univerzity}{Programátorka}{Brno \color{cvaltcolour}}{Práca na vývoji~a úpravách Informačného systému Masarykovej univerzity~v agende Prieskumy. Práca~s jazykom Perl, HTML, CSS, JavaScript~a SQL.}\\
+    
+    \cvevent{2023}{Programko}{Lektorka}{Online \color{cvaltcolour}}{Ako lektorka som sa venovala vedeniu~a organizácii hodín programovania~pre deti. Náplňou online lekcií~v malých skupinách bol programovací jazyk Python~a Scratch.}\\
+    
+    \cvevent{2022}{August Weber GmbH}{Pomocné práce}{Mníchov \color{cvaltcolour}}{Letná brigáda~v zahraničí.}\\
+
+    \cvevent{2021}{MRI Services}{Pomocné práce}{Mníchov \color{cvaltcolour}}{Letná brigáda~v zahraničí.}\\
+\end{tabular}
+
+\vspace{1em}
+
+\fancysection{cvcolour}{Jaz}{yky}
+\begin{minipage}[t]{\paracolwidth}
+\begin{tabular}{l | ll}
+\textbf{slovenčina} & materský jazyk\\
+\textbf{angličtina} & B2\\
+\textbf{nemčina} & B1\\
+\end{tabular}
+\end{minipage}
+
+\vspace{1em}
+
+\fancysection{cvcolour}{Vla}{stnosti}
+\begin{minipage}[t]{\paracolwidth}
+\begin{itemize}
+    \item komunikatívnosť
+    \item dochvíľnosť
+    \item zodpovednosť
+    \item organizovanosť
+    \item precíznosť
+\end{itemize}
+\end{minipage}
+
+\vspace{1em}
+
+\fancysection{cvcolour}{Záu}{jmy}
+\begin{minipage}[t]{\paracolwidth}
+\begin{itemize}
+    \item programovanie
+    \item tanec
+    \item jóga
+    \item turistika
+    \item spoločnské hry
+\end{itemize}
+\end{minipage}
+
+
+\switchcolumn
+
+
+\fancysection{cvcolour}{Vzd}{elanie}
+\begin{tabular}{r| p{\onethirdwidth}}
+    \cvdegree{2021 -}{Masarykova Univerzita Fakulta informatiky}{Brno}{bakalársky štúdijný program Informatika}{\color{cvaltcolour}}{} \\
+    \cvdegree{2017 - 2021}{Gymnázium Jána Adama Raymana}{Prešov}{stredná škola}{\color{cvaltcolour}}{} \\
+\end{tabular}
+
+\vspace{1em}
+
+\fancysection{cvcolour}{Kur}{zy a certifikáty}
+\begin{minipage}[t]{\paracolwidth}
+\begin{tabular}{l | ll}
+2019 & vodičský preukaz sk. B\\
+2019 & kurz prvej pomoci\\
+2020 & ECDL certifikát - moduly M3, M4, M6, M7\\
+\end{tabular}
+\end{minipage}
+
+\vspace{1em}
+
+\fancysection{cvcolour}{Pro}{gramovanie}
+\begin{minipage}[t]{\paracolwidth}
+\begin{tabular}{r @{\hspace{0.5em}}l}
+     html, css &  \barrule{0.4}{0.5em}{cvcolour}\\
+     \LaTeX{} & \barrule{0.2}{0.5em}{cvcolour} \\
+     python & \barrule{0.5}{0.5em}{cvcolour} \\
+     Java & \barrule{0.25}{0.5em}{cvcolour} \\
+     JavaScript & \barrule{0.25}{0.5em}{cvcolour} \\
+     C & \barrule{0.2}{0.5em}{cvcolour} \\
+     Perl & \barrule{0.3}{0.5em}{cvcolour} \\
+     C++ & \barrule{0.1}{0.5em}{cvcolour} \\
+     C\# & \barrule{0.1}{0.5em}{cvcolour} \\
+     Haskell & \barrule{0.05}{0.5em}{cvcolour} \\
+\end{tabular}
+\end{minipage}
+\vspace{1em}
+
+\end{paracol}
 \end{document}
