@@ -1,4 +1,3 @@
-
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{pastelcv}[2019/12/08 A Pastel CV Template with some infographics]
 
@@ -122,3 +121,4 @@
 }
 
 \usepackage{pastelcv}
+
