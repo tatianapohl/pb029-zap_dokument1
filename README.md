@@ -5,4 +5,4 @@ It has 2 parts - first part is my CV and the second part is part of seminar pape
 Link on Overleaf (view only): https://www.overleaf.com/read/shtykytbvkwx#b2f2fd
 
 Link on GitHub (public):
-
+https://github.com/tatianapohl/pb029-zap_dokument1
